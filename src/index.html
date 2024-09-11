@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-blue-950">
+    <div class="container">
+       <div class="flex justify-center mt-40">
+        <div class="box-border border outline-offset-4 flex flex-col gap-4 px-10 py-5 w-96 ">
+            <div class="text-white text-2xl">Password Generator</div>
+            <div class="text-start box-border border outline-offset-2 text-gray-500 px-2" id="generate">Click on generate button</div>
+            <div>
+              <button class="box-border bg-violet-600 text-white  p-3 rounded-xl" id="btn-gen">Generator</button>
+              <button class="box-border bg-violet-600 text-white  p-3 rounded-xl" id="btn_copy">Copy To Clipboard</button>
+            </div>
+            <div>
+                <form action="" class="flex flex-col gap-1">
+                <div class="flex justify-between">
+                 <label for="" class="text-white">Password length</label>
+                 <input type="text" class="w-10" name="length" id="length" value="12" min="4" max="32">
+                </div>
+                <div class="flex justify-between">
+                    <label for="" class="text-white">Inlcude uppercase  letters</label>
+                    <input type="checkbox" name="i_upper" id="i_upper">
+                </div>
+                <div class="flex justify-between">
+                    <label for="" class="text-white">Inlcude lowercase  letters</label>
+                    <input type="checkbox" name="i_upper" id="i_lower">
+                </div>
+                <div class="flex justify-between">
+                    <label for="" class="text-white">Inlcude numbers</label>
+                    <input type="checkbox" name="i_upper" id="i_number">
+                </div>
+                <div class="flex justify-between">
+                    <label for="" class="text-white">Inlcude symbols</label>
+                    <input type="checkbox" name="i_upper" id="i_symbol">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="sript.js"></script>
+</body>
+</html>
